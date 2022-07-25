@@ -1,0 +1,220 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.mainHead{
+    position:relative;
+    width: 100%;
+    height:100vh;
+    background: linear-gradient(90deg,#833ab4,#fcb045,#fd1d1d,#833ab4);
+    background-size: 400%;
+    animation: homeBg 50s infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 99%, 0 80%);
+}
+.navbar{
+    width:100%;
+    height:5vh;
+    text-align: right;
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5));
+}
+.navbar .nav-links{
+    height:100%;
+    width:30%;
+    float:right;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.navbar .nav-links a{
+    text-decoration: none;
+    color: #ffff;
+    font-family: sans-serif;
+}
+.header{
+    width:100%;
+    height:100%;
+}
+.header .name{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size: 5rem;
+    font-style: italic;
+    font-family: cursive;
+    letter-spacing: 2px;
+    color:#fff;
+    font-weight: 600;
+}
+
+.title-bar{
+    width:100%;
+    height:10vh;
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin:20px auto;
+}
+.artSlide{
+    position: relative;
+    width:100%;
+    height: 60vh;
+    background-color: rgba(95, 95, 95, 0.185);
+}
+.artSlide .cards{
+    width:calc(100vh-40px);
+    /*height: 100%;*/
+    margin:20px 20px 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.boxes .box,
+.artSlide .cards .card{
+    height: 300px;
+    width:300px;
+    margin:20px;
+    position:relative;
+}
+.artSlide .cards .card img{
+    width:100%;
+    height: 100%;
+}
+.boxes .box span, 
+.artSlide .cards .card span{
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    height: 99%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform:scale(0);
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.5s ease;
+    overflow: hidden;
+    
+}
+.boxes .box:hover span, 
+.artSlide .cards .card:hover span{
+    transform:scale(1);
+    border-radius: 0;
+    opacity: 1;
+}
+
+.artSlide .btn .view-btn{
+    cursor: pointer;
+    position: absolute;
+    padding:10px 30px;
+    border:#fff 2px solid;
+    border-radius: 10px;
+    color:#fff;
+    background:linear-gradient(286deg, rgba(69,0,115,0.5) 2%, rgba(131,58,180,1) 34%, rgba(253,29,29,1) 100%, rgba(252,176,69,1) 100%);
+    left:50%;
+    transform: translateX(-50%);
+    bottom:10px;
+}
+.contactMe {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+}
+.contactMe img{
+    max-width: 100px;
+    margin: 10px;
+}
+.contactMe .slink{
+    display: block;
+    height:100px;
+    width:100px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+.contactMe .slink:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+}
+.footer{
+    width:100%;
+    position: relative;
+    bottom:0;
+    background-color: black;
+    color:#fff;
+    height: 5vh;
+    text-align: center;
+}
+
+
+
+/*------------------art-gallary----------------*/
+.art-head{
+    width: 100%;
+    height: 100px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background:linear-gradient(90deg,#833ab4,#fcb045,#fd1d1d,#833ab4);
+    /* background-size: 400%; */
+    position: relative;
+    animation: homeBG 50s infinite;
+
+}
+
+.art-head .art-title{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%);
+    font-weight: 400;
+    letter-spacing: 7px;
+    font-size: 2rem;
+    color:white;
+    z-index: 2;
+}
+.container{
+    width:calc(100%-40px);
+    overflow:hidden;
+}
+.container .boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.container .boxes .box{
+    max-width:300px;
+    height: auto;
+    margin:10px;
+}
+.container .boxes .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/*-----------------key frames----------------*/
+
+
+@keyframes homeBg{
+    0%{
+        background-position:0% ;
+    }
+    100%{
+        background-position:400% ;
+    }
+}
