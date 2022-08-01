@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/index.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+
     <title>sharad patel</title>
 </head>
-<body>
+<body onload="screenchk();">
     <div class="mainHead">
         <div class="navbar">
                 <div class="nav-links">
@@ -25,34 +29,38 @@
     <div class="title-bar">
         <div class="title-text">art works</div>
     </div>
-    <div class="artSlide">
-       <div class="cards">
-            <div class="card">
+    <div class="artSlide" id="artSlide">
+       <div class="cards swiper-wrapper" >
+            <div class="card swiper-slide">
                 <img src="images/Cheetah.jpeg" alt="image"/>
                 <a href="images/Cheetah.jpeg" target="_blank" rel="noopener noreferrer">
                     <span>view image</span>
                 </a>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
                 <a href="#"><img src="images/baby.jpg" alt="image"/></a>
                 <a href="images/baby.jpg" target="_blank" rel="noopener noreferrer">
                     <span>view image</span>
                 </a>
             </div>
-            <div class="card">
+            <div class="card swiper-slide">
                 <img src="images/Oldman.jpg" alt="image"/>
                 <a href="images/Oldman.jpg" target="_blank" rel="noopener noreferrer">
                     <span>view image</span>
                 </a>
             </div>
       </div>
+            <div class="swiper-button-next navbtn"></div>
+            <div class="swiper-button-prev navbtn"></div>
+            <div class="swiper-pagination"></div>
       <div class="btn">
         <a href="artgallary.html" class="view-btn">
             view all
         </a>
       </div>
     </div>
- 
+    
+
     <div class="title-bar">
         <div class="title-text">contact me</div>
     </div>
@@ -69,5 +77,9 @@
     <div class="footer">
         &#169;sharad patel
     </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!---local js-->
+    <script src="javaScript/index.js"></script>
 </body>
 </html>
