@@ -50,36 +50,6 @@
 .mainHead .background span:nth-child(10){
     animation-delay: 5s;
 }
-.mainHead .background span:nth-child(11){
-    animation-delay: 5.5s;
-}
-.mainHead .background span:nth-child(12){
-    animation-delay: 6s;
-}
-.mainHead .background span:nth-child(13){
-    animation-delay: 6.5s;
-}
-.mainHead .background span:nth-child(14){
-    animation-delay: 7s;
-}
-.mainHead .background span:nth-child(15){
-    animation-delay: 7.5s;
-}
-.mainHead .background span:nth-child(16){
-    animation-delay: 8s;
-}
-.mainHead .background span:nth-child(17){
-    animation-delay: 8.5s;
-}
-.mainHead .background span:nth-child(18){
-    animation-delay: 9s;
-}
-.mainHead .background span:nth-child(19){
-    animation-delay: 9.5s;
-}
-.mainHead .background span:nth-child(20){
-    animation-delay: 10s;
-}
 @keyframes bubble {
     0% {
         width: 0px;
