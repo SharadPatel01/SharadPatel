@@ -1,0 +1,96 @@
+.mainHead .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    z-index: -200;
+}
+
+.mainHead .background span {
+    position: absolute;
+    top:-20%;
+    left:-20%;
+    display: block;
+    background-color: rgba(116, 196, 79, 0.37);
+    border-radius: 50%;
+    filter: blur(2px);
+    opacity: 0;
+    animation: bubble 10s infinite;
+}
+.mainHead .background span:nth-child(1){
+    animation-delay: .5s;
+}
+.mainHead .background span:nth-child(2){
+    animation-delay: 1s;
+}
+.mainHead .background span:nth-child(3){
+    animation-delay: 1.5s;
+}
+.mainHead .background span:nth-child(4){
+    animation-delay: 2s;
+}
+.mainHead .background span:nth-child(5){
+    animation-delay: 2.5s;
+}
+.mainHead .background span:nth-child(6){
+    animation-delay: 3s;
+}
+.mainHead .background span:nth-child(7){
+    animation-delay: 3.5s;
+}
+.mainHead .background span:nth-child(8){
+    animation-delay: 4s;
+}
+.mainHead .background span:nth-child(9){
+    animation-delay: 4.5s;
+}
+.mainHead .background span:nth-child(10){
+    animation-delay: 5s;
+}
+.mainHead .background span:nth-child(11){
+    animation-delay: 5.5s;
+}
+.mainHead .background span:nth-child(12){
+    animation-delay: 6s;
+}
+.mainHead .background span:nth-child(13){
+    animation-delay: 6.5s;
+}
+.mainHead .background span:nth-child(14){
+    animation-delay: 7s;
+}
+.mainHead .background span:nth-child(15){
+    animation-delay: 7.5s;
+}
+.mainHead .background span:nth-child(16){
+    animation-delay: 8s;
+}
+.mainHead .background span:nth-child(17){
+    animation-delay: 8.5s;
+}
+.mainHead .background span:nth-child(18){
+    animation-delay: 9s;
+}
+.mainHead .background span:nth-child(19){
+    animation-delay: 9.5s;
+}
+.mainHead .background span:nth-child(20){
+    animation-delay: 10s;
+}
+@keyframes bubble {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 1
+    }
+
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+        transform: translate(-50%,-50%);
+    }
+}

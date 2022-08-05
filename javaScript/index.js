@@ -2,6 +2,8 @@
     const realWidth = window.screen.availWidth;
     
     async function screenchk(){
+
+
         if(realWidth<768)
         {
             
@@ -28,5 +30,8 @@
             });
 
         }
+
+
 }
         
+

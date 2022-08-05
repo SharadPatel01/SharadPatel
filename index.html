@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/background.css">
     <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 
 
     <title>sharad patel</title>
 </head>
+
 <body onload="screenchk();">
     <div class="mainHead">
         <div class="navbar">
-                <div class="nav-links">
-                    <a href="#">home</a>
-                    <a href="artgallary.html">art gallary</a>
-                    <a href="#">contact</a>
-                    <a href="#">about me</a>
-                </div>
+            <div class="nav-links">
+                <a href="#">home</a>
+                <a href="artgallary.html">art gallary</a>
+                <a href="#contactMe">contact</a>
+                <a href="#">about me</a>
+            </div>
         </div>
-        <div class="header"> 
-                <div class="name">sharad patel</div>
+        <div class="header">
+            <div class="name">sharad patel</div>
+        </div>
+        <div class="background" id="bck">
+
         </div>
     </div>
     <div class="title-bar">
         <div class="title-text">art works</div>
     </div>
     <div class="artSlide" id="artSlide">
-       <div class="cards swiper-wrapper" >
+        <div class="cards swiper-wrapper">
             <div class="card swiper-slide">
-                <img src="images/Cheetah.jpeg" alt="image"/>
+                <img src="images/Cheetah.jpeg" alt="image" />
                 <a href="images/Cheetah.jpeg" target="_blank" rel="noopener noreferrer">
                     <span>view image</span>
                 </a>
             </div>
             <div class="card swiper-slide">
-                <a href="#"><img src="images/baby.jpg" alt="image"/></a>
+                <a href="#"><img src="images/baby.jpg" alt="image" /></a>
                 <a href="images/baby.jpg" target="_blank" rel="noopener noreferrer">
                     <span>view image</span>
                 </a>
             </div>
             <div class="card swiper-slide">
-                <img src="images/Oldman.jpg" alt="image"/>
+                <img src="images/Oldman.jpg" alt="image" />
                 <a href="images/Oldman.jpg" target="_blank" rel="noopener noreferrer">
                     <span>view image</span>
                 </a>
             </div>
-    
-      </div>
-            
-      <div class="btn">
-       <a href="artgallary.html" class="view-btn">view all</a>
-      </div>
+
+        </div>
+        <div class="btn">
+            <a href="artgallary.html" class="view-btn">view all</a>
+        </div>
     </div>
-    
+
 
     <div class="title-bar">
         <div class="title-text">contact me</div>
     </div>
-    <div class="contactMe">
+    <div class="contactMe" id="contactMe">
         <img class="slink" src="svg/instagram.png" alt="">
         <a href="http://wa.me/+918140897455?text=hello">
             <img class="slink" src="svg/whatsapp.png" alt="">
@@ -78,5 +83,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!---local js-->
     <script src="javaScript/index.js"></script>
+    <script src="javaScript/indexBackground.js"></script>
 </body>
 </html>

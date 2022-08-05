@@ -34,9 +34,14 @@ html{
     justify-content:space-around;
 }
 .navbar .nav-links a{
+    text-transform: capitalize;
     text-decoration: none;
     color: #ffff;
     font-family: sans-serif;
+}
+.navbar .nav-links a:hover{
+    border-bottom: 2px solid;
+    transition:ease-in;
 }
 .header{
     width:100%;
@@ -207,10 +212,50 @@ html{
     object-fit: cover;
 }
 
+.tnc-section{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,0,0,0.3);
+    font-size:15px;
+    color: #070707;
+}
+.tnc-section .btn{
+    margin:0 15px;
+    cursor: pointer;
+    background: #fff;
+    padding:0 5px;
+    border:1px solid rgb(120, 120, 120);
+    border-radius: 5px;
+    font-size: 13px;
+}
 
 /*-----------------key frames----------------*/
 
-
+.header-tnc{
+    width:100%;
+    position: absolute;
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+}
+.header-tnc .container{
+    margin:30px;
+    border-top:2px solid #fff;
+    border-left:2px solid #fff;
+    border-radius:20px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.header-tnc .container .content{
+    padding:30px;
+    line-height:40px;
+    font-size: 20px;
+}
+.header-tnc .container .content h2{
+    margin-bottom:10px;
+}
 @keyframes homeBg{
     0%{
         background-position:0% ;
@@ -239,6 +284,15 @@ html{
     .artSlide{
         height: 400px;
     }  
+    .tnc-section{
+        font-size: 13px;
+        height: 40px;
+    }
+    .header-tnc .container .content{
+        padding:30px;
+        line-height:20px;
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width: 768px)and (min-width: 480px) {
    
