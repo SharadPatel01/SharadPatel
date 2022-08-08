@@ -1,4 +1,6 @@
-
+    function navChange(){
+            document.getElementById("mainHead").classList.toggle("active");
+    }
     const realWidth = window.screen.availWidth;
     
     async function screenchk(){

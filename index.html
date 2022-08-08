@@ -18,7 +18,12 @@
 </head>
 
 <body onload="screenchk();">
-    <div class="mainHead">
+    <div class="mainHead" id="mainHead">
+        <input type="checkbox" id="chk" class="chkbox" >
+        <label for="chk" class="bar" onclick="navChange();">
+            <i class="fas fa-bars icon on"></i>
+            <i class="fas fa-times icon off"></i>
+        </label>
         <div class="navbar">
             <div class="nav-links">
                 <a href="#">home</a>
@@ -26,14 +31,12 @@
                 <a href="#contactMe">contact</a>
                 <a href="#">about me</a>
             </div>
-            <input type="checkbox" name="chk" class="chkbox">
-            <label for="chk" class="bar">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times"></i>
-            </label>
         </div>
+        
         <div class="header">
-            <div class="name">Sharad Patel</div>
+            <div class="name">
+                <img src="images/logo.png" alt="">
+            </div>
         </div>
         <div class="background" id="bck">
 
