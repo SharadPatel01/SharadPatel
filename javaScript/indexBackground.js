@@ -1,8 +1,20 @@
 const background = document.getElementById("bck");
-for (let i = 0; i < 10; i++) {
-    background.innerHTML += `<span id="span"></span>`;
-    span = document.querySelectorAll(".background span")[i];
-    console.log(Math.floor(Math.random() * 100));
-    span.style.left = Math.floor(Math.random() * 1400) + "px";
-    span.style.top = Math.floor(Math.random() * 1000) + "px";
+if(realWidth<768)
+{
+    for (let i = 0; i < 10; i++) {
+        background.innerHTML += `<span id="span"></span>`;
+        span = document.querySelectorAll(".background span")[i];
+        console.log(Math.floor(Math.random() * 100));
+        span.style.left = Math.floor(Math.random() * 750) + "px";
+        span.style.top = Math.floor(Math.random() * 600) + "px";
+    }
+}
+else{
+    for (let i = 0; i < 10; i++) {
+        background.innerHTML += `<span id="span"></span>`;
+        span = document.querySelectorAll(".background span")[i];
+        console.log(Math.floor(Math.random() * 100));
+        span.style.left = Math.floor(Math.random() * 1400) + "px";
+        span.style.top = Math.floor(Math.random() * 1000) + "px";
+    }
 }
